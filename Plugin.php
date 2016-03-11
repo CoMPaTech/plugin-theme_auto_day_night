@@ -8,6 +8,7 @@ class Plugin extends Base
 {
     public function initialize()
     {
+        $this->template->hook->attach('template:config:integrations', 'theme_auto_day_night:config/integration');
         $this->template->hook->attach('template:layout:head', 'theme_auto_day_night:layout/head');
     }
 
@@ -28,11 +29,11 @@ class Plugin extends Base
 
     public function getPluginVersion()
     {
-        return '0.1.0';
+        return '0.1.1';
     }
 
     public function getPluginHomepage()
     {
-        return 'https://github.com/compa/plugin-theme-dark';
+        return 'https://github.com/CoMPaTech/plugin-theme_auto_day_night.git';
     }
 }
