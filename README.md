@@ -1,5 +1,7 @@
-Example of theme with two stylesheets
-=====================================
+Kanboard Example of theme with two stylesheets
+==============================================
+
+To be used with http://kanboard.net
 
 This plugin overrides the core template and CSS using template hooks to create a custom theme including switching between them using predefined times using the users timezone. Or the applications timezone if none is set.
 
@@ -24,6 +26,7 @@ The day-theme was copied from #1248 on fguillot/kanboard
 
 Other resources
 ---------------
-Image from Pixabay (https://pixabay.com/nl/dag-en-nacht-nacht-en-dag-694840/)
-Colorpicker from (https://bgrins.github.io/spectrum/)
+
+  * Image from Pixabay (https://pixabay.com/nl/dag-en-nacht-nacht-en-dag-694840/)
+  * Colorpicker from (https://bgrins.github.io/spectrum/)
 
