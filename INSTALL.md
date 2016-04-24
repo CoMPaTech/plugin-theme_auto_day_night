@@ -1,3 +1,3 @@
-Download or git clone to the plugins directory of your kanboar install
+Download or git clone to the plugins directory of your kanboard install
 
-RENAME the directory to 'theme_auto_day_night'
+RENAME the directory to 'Theme_auto_day_night'

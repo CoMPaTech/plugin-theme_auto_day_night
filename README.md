@@ -11,7 +11,7 @@ This plugin overrides the core template and CSS using template hooks to create a
 Installation
 ------------
 
-- Create a directory **theme_auto_day_night** under the folder **plugins** or **rename** the cloned directory (leave out the plugin-)
+- Create a directory **Theme_auto_day_night** under the folder **plugins** or **rename** the cloned directory (leave out the plugin-)
 - Copy all source files in this new directory
 - Go on your local installation of Kanboard
 - After the login, you should see the alterations to the default layout

@@ -5,24 +5,19 @@
  * Very quick & dirty example of how to have two CSS-styles on users time(zone) switching
  */
 
-use Kanboard\Model\Config;
-
-/*
- * Get configuration
- */
-$configModel = new Config($this->container);
+#use Kanboard\Model\Config;
 
 /*
  * Get start/end times
  */
-$night_starts=$configModel->get('theme_auto_day_night_nighttime');
-$night_ends=$configModel->get('theme_auto_day_night_daytime');
+$night_starts=$this->app->config('theme_auto_day_night_nighttime');
+$night_ends=$this->app->config('theme_auto_day_night_daytime');
 
 // Compile possible timezones
 $timezones=DateTimeZone::listIdentifiers();
 
 // Get the current timezone
-$timezone=$configModel->getCurrentTimezone();
+$timezone=$this->app->config('application_timezone');
 
 /*
  * Only use a different theme if there is a timezone found
@@ -45,11 +40,11 @@ if (in_array($timezone,$timezones)) {
 
     /* DEFINE YOUR NIGHT THEME BELOW */
 
-    $main_background=$configModel->get('theme_auto_day_night_main_background','#222');
-    $alternate_background=$configModel->get('theme_auto_day_night_alternate_background','#444');
-    $folded_background=$configModel->get('theme_auto_day_night_folded_background','#644');
-    $text_color=$configModel->get('theme_auto_day_night_text_color','#dda');
-    $selected_text_color=$configModel->get('theme_auto_day_night_selected_text','#aad');
+    $main_background=$this->app->config('theme_auto_day_night_main_background','#222');
+    $alternate_background=$this->app->config('theme_auto_day_night_alternate_background','#444');
+    $folded_background=$this->app->config('theme_auto_day_night_folded_background','#644');
+    $text_color=$this->app->config('theme_auto_day_night_text_color','#dda');
+    $selected_text_color=$this->app->config('theme_auto_day_night_selected_text','#aad');
 
 
     /* DEFINE YOUR NIGHT THEME ABOVE */
